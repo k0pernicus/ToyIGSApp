@@ -19,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
             long beg = System.currentTimeMillis();
             int new_int = 0;
             for(int i=0; i<5000000; i++) {
+				/* DECOMMENT FOLLOWING CODE FOR IGS
+				 * ================================
+				 * igs_object.Setter(increment(new_int));
+				 * new_int = igs_object.Getter();
+				 */
                 igs_object.a = increment(new_int);
                 new_int = igs_object.a;
             }
